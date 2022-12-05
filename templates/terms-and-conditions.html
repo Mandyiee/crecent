@@ -3,7 +3,7 @@
       <div id="block-finlance-page-title">
        <h1>
         <span>
-         About Omegawfx
+         About {{ site.name }}
         </span>
        </h1>
       </div>
@@ -20,7 +20,7 @@
               </h1>
               <ul class="breadcumb">
                <li>
-                <a href="/index-2">
+                <a href="/">
                  Home
                 </a>
                </li>
@@ -37,7 +37,7 @@
          </div>
         </div>
         <div class="pt-5 pl-4 pr-4 pb-5">
-         <!-- <a href="Terms%20And%20Conditions%20-%20Omegawfx.com.pdf">Terms And Conditions - Omegawfx.com.pdf<i class="fa fa-download"></i></a> -->
+         <!-- <a href="Terms%20And%20Conditions%20-%20{{ site.name }}.com.pdf">Terms And Conditions - {{ site.name }}.com.pdf<i class="fa fa-download"></i></a> -->
         </div>
         <div class="g-gray pt-5 pl-4 pr-4 pb-5">
          <h3>
@@ -83,12 +83,12 @@
           CFTC the United States Commodity Futures Trading Commission.
          </p>
          <p>
-          Client Terminal the MT4 Pro program, which is used by the Customer to obtain information on financial markets (which content is defined by Omegawfx) in real-time, make Transactions, view account equity, place Orders, as well as to receive notices from Omegawfx.
+          Client Terminal the MT4 Pro program, which is used by the Customer to obtain information on financial markets (which content is defined by {{ site.name }}) in real-time, make Transactions, view account equity, place Orders, as well as to receive notices from {{ site.name }}.
          </p>
          <p>
-          Complaint (a) a conflict situation where the Customer reasonably believes that Omegawfx as a result of any action or failure to act has breached one or more terms of the Terms of Business; (b) a conflict situation when Omegawfx reasonably believes that the Customer, as a result of any action or failure to act, has breached one or 
+          Complaint (a) a conflict situation where the Customer reasonably believes that {{ site.name }} as a result of any action or failure to act has breached one or more terms of the Terms of Business; (b) a conflict situation when {{ site.name }} reasonably believes that the Customer, as a result of any action or failure to act, has breached one or 
         more terms of the Terms of Business; (ca conflict situation where the Customer makes a deal at an Error Quote/Spike, or before the first Quote comes to the Trading Platform on the Market Opening, or at the Quote received by the Customer because a Dealer made a Manifest Error or because of a software failure of the Trading Platform;
-         (d) a Trading Dispute; or (e) any other issue relating to fair and ethical trading through Omegawfx or the Trading Platform.
+         (d) a Trading Dispute; or (e) any other issue relating to fair and ethical trading through {{ site.name }} or the Trading Platform.
          </p>
          <p>
           Completed Transaction two offsetting positions of the same volume.
@@ -100,13 +100,13 @@
           Currency Pair a quotation of two different currencies, which is based on the change in the value of one currency against the other.
          </p>
          <p>
-          Customer, a legal entity or an individual is a party to the Customer Agreement with Omegawfx in respect of making Transactions, subject to Margin Trading.
+          Customer, a legal entity or an individual is a party to the Customer Agreement with {{ site.name }} in respect of making Transactions, subject to Margin Trading.
          </p>
          <p>
-          Customer Agreement the agreement between Omegawfx and the Customer, which together govern the terms on which Omegawfx deals with the Customer.
+          Customer Agreement the agreement between {{ site.name }} and the Customer, which together govern the terms on which {{ site.name }} deals with the Customer.
          </p>
          <p>
-          Dealer an employee of Omegawfx who is authorized to execute the Customer’s Orders.
+          Dealer an employee of {{ site.name }} who is authorized to execute the Customer’s Orders.
          </p>
          <p>
           Equity Balance + Floating Profit – Floating Loss. Equity is also referred to as net liquidation value.
@@ -131,14 +131,14 @@ Floating Profit current or unrealized profit on Open Positions calculated at the
 Forex means foreign exchange.
          </p>
          <p>
-          Force Majeure Event the following: (a) any act, event or occurrence (including, without limitation, any strike, riot or civil commotion, terrorism, war, act of God, accident, fire, flood, storm, interruption of power supply, electronic, communication equipment or supplier failure, civil unrest, statutory provisions, lock-outs) which, in Omegawfx‘s reasonable opinion, prevents Omegawfx from maintaining an orderly market in one or more of the Instruments; (b) the suspension, liquidation or closure of any market or the abandonment or failure of any event to which Omegawfx relates its Quotes; or (c) the imposition of limits or special or unusual terms on the trading in any such market or on any such event.
+          Force Majeure Event the following: (a) any act, event or occurrence (including, without limitation, any strike, riot or civil commotion, terrorism, war, act of God, accident, fire, flood, storm, interruption of power supply, electronic, communication equipment or supplier failure, civil unrest, statutory provisions, lock-outs) which, in {{ site.name }}‘s reasonable opinion, prevents {{ site.name }} from maintaining an orderly market in one or more of the Instruments; (b) the suspension, liquidation or closure of any market or the abandonment or failure of any event to which {{ site.name }} relates its Quotes; or (c) the imposition of limits or special or unusual terms on the trading in any such market or on any such event.
 
 Free Margin funds on the Trading Account, which may be used to open a position. It is calculated as Equity less Margin.
          </p>
          <p>
-          Initial Margin the margin required by Omegawfx to open a position. The details for each Instrument are in the Contract Specifications.
+          Initial Margin the margin required by {{ site.name }} to open a position. The details for each Instrument are in the Contract Specifications.
 
-Instant Execution the mechanism of providing Quotes to the Customer without a prior request. The Customer may make a Transaction anytime the Customer sees the Quotes Flow, provided by Omegawfx, in real-time.
+Instant Execution the mechanism of providing Quotes to the Customer without a prior request. The Customer may make a Transaction anytime the Customer sees the Quotes Flow, provided by {{ site.name }}, in real-time.
 
 Instrument any Currency Pair.
          </p>
@@ -156,7 +156,7 @@ Lot means a unit of Base Currency in the Trading Platform.
 
 Manifest Error an error of a Dealer who opens/closes a position or executes an Order at the price which significantly differs from the price for this Instrument in the Quotes Flow at the moment of taking this action, or any other Dealer’s action in respect of the prices which are significantly different from the market prices.
 
-Margin the margin required by Omegawfx to maintain an Open Position. The Margin applicable to each Instrument is specified in the Contract Specifications.
+Margin the margin required by {{ site.name }} to maintain an Open Position. The Margin applicable to each Instrument is specified in the Contract Specifications.
 
 Маrgin Level the percentage or ratio of Equity to Necessary Margin. It is calculated as (Equity / Necessary Margin) multiplied by 100%.
 
@@ -186,12 +186,12 @@ confirmed and executed by clicking one time the Offer or Bid price listed for th
 
 Order ID the unique identification number assigned to each Order placed through or on the Trading
 
-Order Reference Guide the guide containing information about the Order types available on the Trading Platform. This information is displayed on https://www.Omegawfx.com/
+Order Reference Guide the guide containing information about the Order types available on the Trading Platform. This information is displayed on https://www.{{ site.name }}
 
 OTC the over-the-counter market where contracts are not traded on an organized exchange.
          </p>
          <p>
-          Payment Instructions details for depositing funds to the Trading Account. Payment Instructions can be found on Omegawfx Web site.
+          Payment Instructions details for depositing funds to the Trading Account. Payment Instructions can be found on {{ site.name }} Web site.
 
 Pending Order a resting order or an instruction to open a position once the price has reached the level of the Order.
 
@@ -201,7 +201,7 @@ Quote the current price for a specific Instrument in the form of Bid and Offer p
 
 Quote Currency the second currency in the Currency Pair which can be bought or sold by the Customer for the Base Currency.
 
-Report/Trade Summary the file created by the Server, which records accurately to a second all Orders sent by the Customer to Omegawfx as well as the results of their execution.
+Report/Trade Summary the file created by the Server, which records accurately to a second all Orders sent by the Customer to {{ site.name }} as well as the results of their execution.
 
 Risk Disclosure Statement the risk disclosure statement included in paragraphs 1 and 2 of
 
@@ -212,9 +212,9 @@ Sell means Bid.
 
 Sell Stop an Order to open a Short Position at the price lowers than the price at the moment of placing the Order.
 
-Server the MT4 Pro server program. This program is used to execute the Customer’s Orders and provide trading information in real-time mode (the content is defined by Omegawfx), subject to the mutual liabilities between Customer, the Forex Customer Agreement and its Terms.
+Server the MT4 Pro server program. This program is used to execute the Customer’s Orders and provide trading information in real-time mode (the content is defined by {{ site.name }}), subject to the mutual liabilities between Customer, the Forex Customer Agreement and its Terms.
 
-Services the services provided by Omegawfx to the Customer as set out in the Agreement.
+Services the services provided by {{ site.name }} to the Customer as set out in the Agreement.
 
 Short Position a Sell position that appreciates in value if market prices fall.
 
@@ -242,9 +242,9 @@ Terms have the meaning set forth in paragraph 1.1 of Exhibit A, Terms of Busines
 
 Trading Account the unique personified registration system of all Completed Transactions, Open Positions, Orders and deposit/ withdrawal transactions in the Trading Platform.
 
-Trading Dispute a complaint or grievance relating to a Transaction or trade submitted, deleted, modified, offset/closed or executed on the Trading Platform or otherwise handled by Omegawfx.
+Trading Dispute a complaint or grievance relating to a Transaction or trade submitted, deleted, modified, offset/closed or executed on the Trading Platform or otherwise handled by {{ site.name }}.
 
-Trading Platform all programs and technical facilities which: (a) provide real-time Quotes; (b) allow Transactions to be made; (c) allow Orders to be placed, modified, deleted, offset and executed; and (d) calculate all mutual obligations between the Customer and Omegawfx. The trading platform consists of the Server and the Client Terminal.
+Trading Platform all programs and technical facilities which: (a) provide real-time Quotes; (b) allow Transactions to be made; (c) allow Orders to be placed, modified, deleted, offset and executed; and (d) calculate all mutual obligations between the Customer and {{ site.name }}. The trading platform consists of the Server and the Client Terminal.
 
 Trailing Stop a complex Stop Loss Order where the Stop Loss price is set at a fixed percentage or number of points below the market price. On a Buy Order, if the market price rises, the Stop Loss price rises proportionately. If the price falls, the Stop Loss price does not change.
 
@@ -259,10 +259,10 @@ Transaction Size Lot Size multiplied by the number of Lots.
           2.1. Transmission of Reports, Statements, Notices, and Other
          </p>
          <p>
-          Communications. Reports, statements, notices and any other communications from Omegawfx will be made available by display electronically via Omegawfx Trading Platform, or may be transmitted electronically via e-mail or sent to the mailing address listed in the application, via U.S. mail or to such other address as the Customer may from time to time designate in writing to Omegawfx. All communications so made available or sent, whether by mail, display electronically, telegraph, messenger, e-mail, fax or otherwise, shall be deemed transmitted by Omegawfx when deposited in the United States mail, or when received by a transmitting agent or posted in Omegawfx Trading Platform or Website and are thus available for the Customer’s electronic access, or when e-mailed or faxed, and will also be deemed delivered to the Customer personally, whether actually received or accessed by the Customer or not. The Customer shall notify Omegawfx immediately of any change in the Customer’s address by e-mail to support@Omegawfx.com. All communications sent by the Customer shall not be deemed effective until accepted by Omegawfx.
+          Communications. Reports, statements, notices and any other communications from {{ site.name }} will be made available by display electronically via {{ site.name }} Trading Platform, or may be transmitted electronically via e-mail or sent to the mailing address listed in the application, via U.S. mail or to such other address as the Customer may from time to time designate in writing to {{ site.name }}. All communications so made available or sent, whether by mail, display electronically, telegraph, messenger, e-mail, fax or otherwise, shall be deemed transmitted by {{ site.name }} when deposited in the United States mail, or when received by a transmitting agent or posted in {{ site.name }} Trading Platform or Website and are thus available for the Customer’s electronic access, or when e-mailed or faxed, and will also be deemed delivered to the Customer personally, whether actually received or accessed by the Customer or not. The Customer shall notify {{ site.name }} immediately of any change in the Customer’s address by e-mail to support@{{ site.name }}.com. All communications sent by the Customer shall not be deemed effective until accepted by {{ site.name }}.
          </p>
          <p>
-          2.2 Consent to Other Communications. The Customer expressly invites Omegawfx, for the purpose of marketing financial services and products, from time to time, to make direct contact with the Customer by telephone, facsimile or otherwise. The Customer consents to such communications and agrees that the Customer will not consider such communication a breach of any of the Customer’s rights under any relevant data protection and/or privacy regulations. The Customer may opt out of receiving such communications by sending Omegawfx an e-mail at support@Omegawfx.com
+          2.2 Consent to Other Communications. The Customer expressly invites {{ site.name }}, for the purpose of marketing financial services and products, from time to time, to make direct contact with the Customer by telephone, facsimile or otherwise. The Customer consents to such communications and agrees that the Customer will not consider such communication a breach of any of the Customer’s rights under any relevant data protection and/or privacy regulations. The Customer may opt out of receiving such communications by sending {{ site.name }} an e-mail at support@{{ site.name }}.com
          </p>
          <p>
           3- RELATIONSHIP BETWEEN THE COMPANY AND THE CLIENT
@@ -289,7 +289,7 @@ Pay a fee to third persons who either recommended the Client to the Company or w
           4- Client Classification
          </h3>
          <p>
-          For the purposes of the services provided by Omegawfx under these Terms of business, we will act as principal and not as agent on your behalf. We shall treat you as a Retail Client, subject to the following:
+          For the purposes of the services provided by {{ site.name }} under these Terms of business, we will act as principal and not as agent on your behalf. We shall treat you as a Retail Client, subject to the following:
          </p>
          <p>
           a-if you satisfy the definition of Professional Client or Eligible Counter-party, we may notify you that we will treat you as such and the terms detailed in Schedule 1 shall apply; and
@@ -316,16 +316,16 @@ Pay a fee to third persons who either recommended the Client to the Company or w
           5- IMPORTANT INFORMATION ABOUT PROCEDURES FOR OPENING A NEW ACCOUNT
          </p>
          <p>
-          5.1. Omegawfx recognizes that the USA PATRIOT Act, as amended from time to time (the “Act”), imposes important obligations on all financial firms for the detection, deterrence, and reporting of money laundering activities. Under the Act, money laundering is defined as any financial transaction using income derived from criminal activity including, but not limited to, drug trafficking, fraud, illegal gambling, and terrorism. Omegawfx has established the following policies to ensure compliance with all laws and regulations regarding money laundering.
+          5.1. {{ site.name }} recognizes that the USA PATRIOT Act, as amended from time to time (the “Act”), imposes important obligations on all financial firms for the detection, deterrence, and reporting of money laundering activities. Under the Act, money laundering is defined as any financial transaction using income derived from criminal activity including, but not limited to, drug trafficking, fraud, illegal gambling, and terrorism. {{ site.name }} has established the following policies to ensure compliance with all laws and regulations regarding money laundering.
          </p>
          <p>
-          5.2. Prior to the opening of any new Trading Account, Omegawfx will document the identity, nature of business, income, the source of funds, and investment objectives of each prospective customer. Therefore, Omegawfx will request the Customer’s driver’s license number, passport number and may request copies of the Customer’s identifying documents.
+          5.2. Prior to the opening of any new Trading Account, {{ site.name }} will document the identity, nature of business, income, the source of funds, and investment objectives of each prospective customer. Therefore, {{ site.name }} will request the Customer’s driver’s license number, passport number and may request copies of the Customer’s identifying documents.
          </p>
          <p>
-          5.3. On an on-going basis, Omegawfx will review Trading Account activity for evidence of transactions that may be indicative of money laundering activities. This review may include surveillance of: (a) money flows into and out of Trading Accounts, (b) the origin and destination of wire transfers, (c) non-economic transactions, and (d) other activity outside the normal course of business. Every officer, employee and associated person of Omegawfx is responsible for assisting in the firm’s efforts to uncover and report any activity that might constitute, or otherwise indicate or raise suspicions of, money laundering. To this end, Omegawfx provides continuing education and training of all such persons.
+          5.3. On an on-going basis, {{ site.name }} will review Trading Account activity for evidence of transactions that may be indicative of money laundering activities. This review may include surveillance of: (a) money flows into and out of Trading Accounts, (b) the origin and destination of wire transfers, (c) non-economic transactions, and (d) other activity outside the normal course of business. Every officer, employee and associated person of {{ site.name }} is responsible for assisting in the firm’s efforts to uncover and report any activity that might constitute, or otherwise indicate or raise suspicions of, money laundering. To this end, {{ site.name }} provides continuing education and training of all such persons.
          </p>
          <p>
-          5.4. Omegawfx will comply with all trade and economic sanctions imposed by the U.S. Office of Foreign Assets Control against targeted foreign countries and shall cooperate fully with government agencies, self-regulatory organisations, and law enforcement officials. As provided by the Act, Omegawfx may supply information about former, current or prospective customers to such bodies.
+          5.4. {{ site.name }} will comply with all trade and economic sanctions imposed by the U.S. Office of Foreign Assets Control against targeted foreign countries and shall cooperate fully with government agencies, self-regulatory organisations, and law enforcement officials. As provided by the Act, {{ site.name }} may supply information about former, current or prospective customers to such bodies.
          </p>
          <h3>
           6-CLIENT ACCOUNTS

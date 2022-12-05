@@ -46,8 +46,8 @@ class ReferralAdmin(admin.ModelAdmin):
 
 @admin.register(Site)
 class SiteAdmin(admin.ModelAdmin):
-    list_display = ('owned_by','name','email','address','second_address','logo')
-    list_editable = ('name','email','address','second_address','logo',)
+    list_display = ('owned_by','name','email','address','second_address','logo','phone_number')
+    list_editable = ('name','email','address','second_address','logo','phone_number')
     list_display_links = ('owned_by',)
 # admin.site.register(PendingDeposit)
 # admin.site.register(Notification)

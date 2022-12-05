@@ -1,5 +1,7 @@
-from django.shortcuts import render
-from user_core.models import Site
+from django.shortcuts import render,redirect
+from user_core.models import Site, InvestmentPlan
+from django.core.mail import send_mail
+from django.conf import settings
 # Create your views here.
 
 
@@ -39,6 +41,14 @@ def contact(request):
         'site':site
     }
     
+    if request.method == 'POST':
+        body = request.POST['body']
+        subject = request.POST['subject']
+        name = request.POST['name']
+        email = request.POST['email']
+        send_mail(subject=subject,message=body,from_email=email,recipient_list=[settings.RECIPIENT_ADDRESS])
+        return redirect('/')
+    
     return render(request,'contact.html',context)
                 
 def faq(request):
@@ -59,9 +69,10 @@ def index(request):
     except Site.DoesNotExist:
         site = Site.objects.create(pk=1)
         site.save()
-    
+    plans = InvestmentPlan.objects.all()
     context ={
-        'site':site
+        'site':site,
+        'plans':plans
     }
     
     return render(request,'index.html',context)

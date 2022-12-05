@@ -17,7 +17,7 @@ class Profile(models.Model):
     plan_days = models.IntegerField(default=0,null=True,blank=True)
     plan_end_date = models.DateField(default=now(),null=True,blank=True)
     plan_amount  = models.IntegerField(default=0,null=True,blank=True)
-    profit_list = models.TextField(null=True,blank=True)
+    # profit_list = models.TextField(null=True,blank=True)
     referral_price  = models.FloatField(default=0)
     referral_people  = models.FloatField(default=0)
     referred_by  = models.CharField(max_length=100,null=True,blank=True)
@@ -211,6 +211,7 @@ class Site(models.Model):
     address = models.CharField(max_length=300,null=True,blank=True,default='Blank Address')
     second_address = models.CharField(max_length=300,null=True,blank=True,default='Blank Address')
     logo = models.ImageField(upload_to='site_images', default='logo.png')
+    phone_number = models.IntegerField(null=True,blank=True,default=0)
     owned_by = models.CharField(max_length=50,null=True,blank=True,default='Admin')
     
     def __str__(self):
