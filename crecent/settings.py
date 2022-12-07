@@ -175,3 +175,12 @@ EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 RECIPIENT_ADDRESS = env('RECIPIENT_ADDRESS')
 
 #for 587 port use 'django.core.mail.backends.smtp.EmailBackend' 
+
+
+import dj_database_url
+
+DATABASE_URL = env('DATABASE_URL')
+
+DATABASES = {
+    "default": dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
+}
