@@ -175,6 +175,9 @@ RECIPIENT_ADDRESS = os.getenv('RECIPIENT_ADDRESS')
 
 #for 587 port use 'django.core.mail.backends.smtp.EmailBackend' 
 
+CSRF_COOKIE_SECURE = True
+
+SESSION_COOKIE_SECURE = True
 
 import dj_database_url
 
