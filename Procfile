@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn crecent.wsgi
+web: gunicorn crecent.wsgi; --log-file -
