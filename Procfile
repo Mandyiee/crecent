@@ -1,1 +1,1 @@
-web: gunicorn crecent.wsgi; --log-file -
+web: gunicorn crecent.wsgi --log-file -
