@@ -2,7 +2,6 @@ from django.db import models
 from django.utils.timezone import now
 from django.contrib.auth import get_user_model
 from datetime import date
-
 User = get_user_model()
 
 # Create your models here.
@@ -15,7 +14,7 @@ class Profile(models.Model):
     book_balance = models.FloatField(default=0)
     plan_name = models.CharField(max_length=50,null=True,blank=True)
     plan_days = models.IntegerField(default=0,null=True,blank=True)
-    plan_end_date = models.DateField(default=now(),null=True,blank=True)
+    plan_end_date = models.DateTimeField(auto_now_add=True,null=True,blank=True)
     plan_amount  = models.IntegerField(default=0,null=True,blank=True)
     # profit_list = models.TextField(null=True,blank=True)
     referral_price  = models.FloatField(default=0)
