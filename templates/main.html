@@ -17,9 +17,9 @@
   <meta content="{{ site.name }} - Best Online Trading Platform" property="og:title" />
   <meta content="website" property="og:type" />
   <meta content="{{ site.name }} broker" property="og:description" />
-  <meta content="{{ site.logo.url }}' %}" property="og:image" />
-  <meta content="{{ site.logo.url }}" property="og:image:secure_url" />
-  <link href="{{ site.logo.url }}" rel="shortcut icon" type="image/png" />
+  <meta content="{% static 'images/crest_expert_logo.png' %}' %}" property="og:image" />
+  <meta content="{% static 'images/crest_expert_logo.png' %}" property="og:image:secure_url" />
+  <link href="{% static 'images/crest_expert_logo.png' %}" rel="shortcut icon" type="image/png" />
   <link href="{% static 'css/bootstrap.min7eda.css' %}" media="all" rel="stylesheet" />
   <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" />
   <link href="{% static 'css/fontawesome.min7eda.css' %}" media="all" rel="stylesheet" />
@@ -386,7 +386,7 @@
   <!-- preloader section start -->
   <div class="loader-container">
     <div class="loader">
-      <img alt="preloader" src="{{ site.logo.url }}" />
+      <img alt="preloader" src="{% static 'images/crest_expert_logo.png' %}" />
     </div>
   </div>
   <!-- preloader section end -->
@@ -475,7 +475,7 @@
                   <div class="logo-wrapper">
                     <div>
                       <a href="/" rel="home" title="Home">
-                        <img alt="Home" id="logo" src="{{ site.logo.url }}" />
+                        <img alt="Home" id="logo" src="{% static 'images/crest_expert_logo.png' %}" />
                       </a>
                     </div>
                   </div>
@@ -583,7 +583,7 @@
               <div id="block-footercolumn1">
                 <div class="footer-logo-wrapper">
                   <a href="/">
-                    <img alt="" src="{{ site.logo.url }}" />
+                    <img alt="" src="{% static 'images/crest_expert_logo.png' %}" />
                   </a>
                 </div>
                 <p class="footer-txt">

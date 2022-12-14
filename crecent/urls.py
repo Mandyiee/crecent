@@ -25,8 +25,7 @@ urlpatterns = [
      path('user/', include('user_core.urls')),
 ]
 
-urlpatterns = urlpatterns + static(settings.MEDIA_URL,document_root=settings.MEDIA_URL)
-
+urlpatterns = urlpatterns + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
 
 handler404 = 'user_core.views.my_custom_page_not_found_view'
